@@ -16,9 +16,7 @@ public class ProductRepository {
 
     // Метод для выполнения SQL-запроса через EntityManager
     public String findProductNameByCustomerName(String name, String script) {
-        //String jpql = "SELECT o.productName FROM Order o WHERE o.customer.name = :name";
         TypedQuery<String> query = entityManager.createQuery(script, String.class);
-        //TypedQuery<String> query = entityManager.createQuery(jpql, String.class);
         query.setParameter("name", name);
 
         // Выполняем запрос и возвращаем результат
