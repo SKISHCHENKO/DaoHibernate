@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "PERSONS")
-@IdClass(PersonId.class) // Указываем составной ключ
+@IdClass(PersonId.class)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

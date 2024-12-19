@@ -32,7 +32,7 @@ public class PersonController {
         return personService.getPersonsByAge(age);
     }
 
-    // Получить человека по имени и фамилии, используя Optional
+    // Получить человека по имени и фамилии
     @GetMapping("/persons/by-name-surname")
     public Optional<Person> getPersonByNameAndSurname(@RequestParam String name, @RequestParam String surname) {
         return personService.getPersonByNameAndSurname(name, surname);
